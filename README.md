@@ -2,6 +2,17 @@
 
 This repository contains Python scripts to generate SPICE models for RF and Schottky diodes based on manufacturer datasheets. It currently supports the **SMS7630** diode, and can be easily extended for other diodes.
 
+
+## 📚 Bibliography
+
+The `bibliography/` folder contains reference materials, datasheets, and modeling notes used in the creation of the SPICE models. This includes:
+
+- Manufacturer datasheets (e.g., Skyworks SMS7630)
+- Technical modeling notes or publications
+- Helpful links and resources related to SPICE modeling
+
+Please consult these documents if you want to understand the source of parameter 
+
 ## 📦 Folder Structure
 
 Each diode model is organized in its own folder. Currently included:
