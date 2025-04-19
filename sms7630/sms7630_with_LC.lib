@@ -1,0 +1,23 @@
+ 
+* SPICE Subcircuit Model for SMS7630_LC Schottky Diode
+.SUBCKT SMS7630_LC 1 2  ; Define ports: 1 = Input, 2 = Output
+    Ls  1 N1 7e-10  ; Series inductance
+    D1  N1 2 SMS7630  ; Diode model
+    Cp  N1 2 7e-14  ; Parallel capacitance
+.ENDS SMS7630_LC
+
+* Diode SPICE Model
+.MODEL SMS7630 D (
+    IS=5e-06    ; Saturation current
+    RS=20      ; Series resistance
+    N=1.05        ; Ideality factor
+    TT=1e-11      ; Transit time
+    CJO=1.4e-13    ; Zero-bias junction capacitance
+    VJ=0.34      ; Junction potential
+    M=0.4        ; Grading coefficient
+    EG=0.69      ; Band gap energy
+    XTI=2    ; Saturation current temperature exponent
+    FC=0.5      ; Forward-bias depletion capacitance coefficient
+    BV=2      ; Reverse breakdown voltage
+    IBV=0.0001    ; Current at breakdown voltage
+)

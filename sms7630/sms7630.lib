@@ -1,0 +1,16 @@
+ 
+* SPICE Model for SMS7630 Schottky Diode
+.MODEL SMS7630 D (
+    IS=5e-06    ; Saturation current
+    RS=20      ; Series resistance
+    N=1.05        ; Ideality factor
+    TT=1e-11      ; Transit time
+    CJO=1.4e-13    ; Zero-bias junction capacitance
+    VJ=0.34      ; Junction potential
+    M=0.4        ; Grading coefficient
+    EG=0.69      ; Band gap energy
+    XTI=2    ; Saturation current temperature exponent
+    FC=0.5      ; Forward-bias depletion capacitance coefficient
+    BV=2      ; Reverse breakdown voltage
+    IBV=0.0001    ; Current at breakdown voltage
+)
